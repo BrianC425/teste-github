@@ -1,0 +1,1 @@
+# Hoje, dia 07/07/2026, foi feita a criação e configuração da página github.io, onde pode ser visto o meu CV na sua versão em inglês.
