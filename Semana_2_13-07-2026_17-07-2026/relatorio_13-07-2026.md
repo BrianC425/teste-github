@@ -1,0 +1,7 @@
+# Hoje, dia 13/07/2026, fiz a instalação do Docker Desktop.
+
+### 1 - Fiz a instalação do Docker através da página oficial.
+### 2 - Como o meu computador não tinha préviamente instalado, fiz a instalação do WSL (Windows Subsystem for Linux)
+### 3 - Após o registo no Docker, entrei ao YouTube e vi um vídeo explicativo sobre o funcionamento do mesmo. (https://www.youtube.com/watch?v=Ud7Npgi6x8E)
+
+## O que eu entendi, em palavras simples: o Docker é uma espécie de mini máquina virtual que serve para executar comandos num espaço isolado de nossa máquina ou de qualquer máquina na qual estivermos a trabalhar, evitando assim que aqueles comandos interatuem com o resto da máquina. É útil também para executar nossos próprios códigos sem necessidade de instalar muitas dependências, pois basta só criar uma imagem com o respetivo ficheiro Dockerfile para que o código funcione em qualquer máquina sem problema qualquer e com uma instalação muito mais rápida do que se tentarmos correr o código máquina a máquina. A grande diferença de Docker e uma VM é que, enquanto uma VM cria um sistema operativo com un kernel separado da máquina host, um container Docker criado a partir de uma imagem utiliza o mesmo kernel e componentes da máquina host, mas separa os processos que estiverem a correr nele.
