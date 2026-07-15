@@ -1,0 +1,1 @@
+# Hoje, dia 15/07/2026, introduzi o meu CV no container frontend criado ontem, com um pequeno script no final que vai mostrar uma mensagem no container do backend, verificando a conexão entre ambos.
