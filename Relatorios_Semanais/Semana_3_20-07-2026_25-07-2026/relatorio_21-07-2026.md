@@ -1,0 +1,9 @@
+## Hoje, dia 21/07/2026, fiz uma análise de pacotes web através do PowerShell.
+
+### -Procurei na internet formas de analizar o trafego HTTP através do PowerShell, encontrando o comando '*pktmon*', que vem instalado por default no Windows 10 e superiores. Para além disso, o comando também tem uma funcionalidade para converter o ficheiro .etl final em .pcapng, para o seu análise em programas como Wireshark.
+### - O comando é muito similar a outro comando disponível no Windows, *netsh trace*, mas *pktmon* consegue converter os ficheiros a .pcapng de maneira nativa, e achei um pouco mais fácil de utilizar no geral.
+### -Introduzi o primeiro comando, *pktmon start --capture --file-name C:\Users\Venti\Desktop\Newfolder\trace.etl*, para fazer o análise do tráfego e salvar num ficheiro ***trace.etl*** numa folder nova no escritório.
+### -Após visitar algumas páginas web simples, introduzi o comando pktmon stop para detener o análise.
+### -Finalmente, introduzi o comando *pktmon etl2pcap C:\Users\Venti\Desktop\Newfolder\trace.etl --out C:\Users\Venti\Desktop\Newfolder\trace.pcapng* para converter o ficheiro ***trace.etl*** para ***trace.pcapng***. O parametro etl2pcap faz a conversão.
+### -Em WireShark, verifiquei que o ficheiro tinha as informações requeridas: informações HTTP (muito poucas, pois quase todo o tráfego atualmente é HTTPS e não HTTP) e informações HTTPS (encontradas mais fácilmente com a busqueda *tcp.port == 443*, que mostra o tráfego na porta 443, correspondente a HTTPS)
+### -Assim, é possível observar o tráfego HTTP e HTTPS através do PowerShell sem instalação de programas (para além do Wireshark, necessário para visualizar os logs produzidos), embora o conteúdo HTTPS esteja encriptado.
