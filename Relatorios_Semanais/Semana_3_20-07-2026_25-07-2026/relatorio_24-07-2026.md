@@ -1,0 +1,7 @@
+## Hoje, dia 24/07/2026, modifiquei o ficheiro .ps1 feito ontem, de maneira a poder introduzir uma cidade manualmente e exportar cada output a um ficheiro .txt.
+
+### 1- Procurei uma api para obter a latitude e longitude de uma cidade procurada, encontrando uma no mesmo site open-meteo (***https://geocoding-api.open-meteo.com/v1***).
+### 2- Adicionei o objeto *$nomecidade*, para pedir o nome da cidade ao utilizador separando com +, e *$resultadocidade*, para obter a latitude e longitudes da cidade desejada.
+### 3- Fiz novos objetos, *$lat* e *$lon*, que vao ler os valores da cidade previamente inserida pelo utilizador.
+### 4- Mudei a URL para ***https://api.open-meteo.com/v1/forecast?latitude=$lat&longitude=$lon&hourly=temperature_2m,rain&current=temperature_2m,rain&timezone=auto&forecast_days=1*** e ajustei as tabelas para mostrar também se está a chover ou não e a timezone.
+### 5- Adicionei as linhas *Tee-Object -FilePath .\OutputXX.txt* a cada opçao, o XX mudando dependendo de se foi selecionada uma previsão hora a hora ou atual, para exportar os resultados a um ficheiro .txt. Abaixo da zona horária, adicionei a linha *Tee-Object -FilePath .\OutputXX.txt -Append*, para adicionar ao ficheiro previamente gerado.
