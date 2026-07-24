@@ -14,17 +14,17 @@ switch ($opcao) {
         }
     }
         $porhora |
-        Tee-Object -FilePath .\OutputPorHora.txt
+        Tee-Object -FilePath ..\OutputsClima\OutputPorHora.txt
         "Zona horaria: $zonahoraria" |
-        Tee-Object -FilePath .\OutputPorHora.txt -Append} 
+        Tee-Object -FilePath ..\OutputsClima\OutputPorHora.txt -Append} 
     2  {$atual = [PSCustomObject]@{
         "Dia e hora atuais" = $resultado.current.time
         "Temperatura atual em Celsius" = $resultado.current.temperature_2m
         "Chuva" = $resultado.current.rain
     }
         $atual |
-        Tee-Object -FilePath .\OutputAtual.txt
+        Tee-Object -FilePath ..\OutputsClima\OutputAtual.txt
         "Zona horaria: $zonahoraria" |
-        Tee-Object -FilePath .\OutputAtual.txt -Append} 
+        Tee-Object -FilePath ..\OutputsClima\OutputAtual.txt -Append} 
     default { "Ocorreu um erro na selecao." }
 }
