@@ -1,0 +1,1 @@
+## Hoje, dia 29/07/2026, fiz várias experiências relacionadas à IA self hosted, fiz pesquisas relacionadas ao seu funcionamento e tentei perceber um pouco mais a diferença e as vantagens de uma IA pública (como Gemini ou Claude) e uma IA privada local.
