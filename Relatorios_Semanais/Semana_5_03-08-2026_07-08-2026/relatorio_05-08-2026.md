@@ -1,0 +1,6 @@
+## Hoje, dia 05/05/2026, consegui que a IA analizasse os logs do frontend para verificar os pedidos GET feitos no dia e o cliente que os fez.
+
+### -Primeiro, pesquisei sobre a ubicacao dos logs, e descobri que nao existia uma física, mas sim havia uma forma de os ver através do comando docker logs teste-frontend-1 | Select-String "GET". No entanto, o comando mostrava todos os logs e só os provenientes de "GET" embaixo, e por isso pesquisei uma forma de filtrar por data e mostrar só os logs desejados e nao os anteriores.
+### -Com ajuda de Claude, optimizei o comando para mostrar só os logs do dia de hoje: docker logs teste-frontend-1 2>&1 | Select-String "GET" | Select-String "$(Get-Date -Format 'dd/MMM/yyyy')". Criei um ficheiro logs.ps1 e introduzi o comando.
+### -No ficheiro .py do servidor mcpo, adicionei uma nova ferramenta que iria executar o novo ficheiro logs.ps1 cada vez que o usuario perguntar pela quantidade de requests feitas ao servidor no dia atual.
+### -Verifiquei que a IA local consegue executar o comando e analizar o output do mesmo.
