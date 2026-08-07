@@ -1,0 +1,1 @@
+## Hoje, 07/08/2026, instalei WSL no windows e configurei o container do ollama para que conseguisse utilizar também a memória da GPU e nao so o CPU, agilizando o modelo considerávelmente.
