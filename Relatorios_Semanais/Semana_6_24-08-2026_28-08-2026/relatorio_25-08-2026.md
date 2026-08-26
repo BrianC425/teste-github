@@ -1,0 +1,1 @@
+## Hoje, 25/08/2026, investiguei um pouco sobre Agent Loop, vindo especificamente um vídeo em YouTube que ajudou perceber mais sobre o tema (https://www.youtube.com/watch?v=7clJ8IH784Q)
