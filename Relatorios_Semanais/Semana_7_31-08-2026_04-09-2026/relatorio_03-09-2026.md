@@ -1,0 +1,4 @@
+## Hoje, dia 04/09/2026, pesquisei a forma de utilizar dois modelos simultaneamente em OpenWebUI sem nenhuma ferramenta de por médio, e que o modelo mais competente respondesse à query do utilizador.
+
+### Investiguei uma forma de fazer, com ajuda da IA, e descobri as Pipes no Open WebUI. Básicamente é uma extensão que permite definir uma espécie de modelo com base num código Python específico.
+### Ao introduzir o código deste modelo numa nova Pipe, foi possível configurar essa Pipe de modo a que um modelo leia a prompt e escolha o melhor modelo para responder entre A e B. No meu caso, um dos modelos repete-se duas vezes, o que significa que em uma instância o modelo é chamado para ler a prompt e enviar a um dos modelos, e a segunda instância (correspondente à opção B) lê e responde a essa prompt se a sua opção for escolhida para isso.
