@@ -1,0 +1,1 @@
+## Hoje, mudei um bocado o setup feito no dia anterior, pois estava com alguns problemas quando recebia as prompts (só recebia a primeira prompt enviada, sem importar o conteúdo da prompt atual). O novo comando para enviar prompts passou a ser : docker run --rm --network ai-rede prompt-sender "PROMPT" llama3.2:1b
