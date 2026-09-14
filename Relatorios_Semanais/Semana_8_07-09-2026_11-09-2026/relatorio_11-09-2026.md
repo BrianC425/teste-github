@@ -1,0 +1,1 @@
+## Hoje, dia 11/09/2026, consegui que o Open WebUI funcionasse com o sistema dos dias anteriores, conseguindo enviar prompts e visualizar as respostas sem necessidade de ir ao cmd.
