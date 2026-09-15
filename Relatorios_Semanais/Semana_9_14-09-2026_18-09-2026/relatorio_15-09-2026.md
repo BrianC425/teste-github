@@ -1,0 +1,1 @@
+## Hoje, dia 15/09/2026, fiz um passo a passo de como instalar o meu sistema atual rabbitmq no docker, desde configurar o container ollama e os modelos, configurar o container open-webui, e configurar o container rabbitmq con os consumers e as queues requeridas.
