@@ -1,0 +1,1 @@
+## Hoje, fiz vários ajustes ao passo a passo feito no dia anterior, assim como criar uma nova repo no github para introduzir o ficheiro.
