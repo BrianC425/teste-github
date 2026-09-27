@@ -1,0 +1,3 @@
+## Hoje, consegui instalar o OpenWebUI e o Ollama numa cloud, sem ser no computador local, e aceder ao mesmo com uma IP pública.
+
+### Seguindo esta guia, consegui instalar tanto Open WebUI como os modelos Ollama no Google Colab. Desta forma, foi possível imitar o setup no Docker sem necessidade de um computador: https://colab.research.google.com/github/Axenide/Open-WebUI-Colab/blob/main/Open_WebUI.ipynb
